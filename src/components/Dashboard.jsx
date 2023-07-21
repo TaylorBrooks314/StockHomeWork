@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { StockContext } from './StockContext'
 import '../styles/Dashboard.css'
 function Dashboard() {
-  const {stocks,setCurrentStock }= useContext(StockContext)
+  const {stocks,setCurrentStock ,followList }= useContext(StockContext)
 
   
   return (
@@ -21,12 +21,13 @@ function Dashboard() {
       let change = (stock.lastPrice+stock.change*stock.lastPrice).toFixed(2);
       let color = 'green'
       change>stock.lastPrice ? color = 'green': color = 'red'
-      
+      let followDot = followList.includes(stock.symbol)
+      console.log(followDot)
       return(
         <div className='stockData' key={stock.name}>
 
           <Link className='stockLink' to={`/stock/${stock.symbol}`}onClick={()=>{setCurrentStock(stock)}}>{stock.name}</Link>
-          
+          {followDot?<p className='followDot'>**</p>:null}
           <p className='stockP price' >{stock.lastPrice}</p>
           <p className='stockP' style={{color:color}}>{change} ({stock.change.toFixed(2)}%)</p>
           
