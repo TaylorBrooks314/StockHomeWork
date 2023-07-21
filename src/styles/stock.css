@@ -1,0 +1,30 @@
+*{
+    text-align: center;
+    margin: 0;
+}
+.stockTraitsContaier{
+    
+    display: flex;
+    flex-direction: row;
+    margin-left: 27%;
+    margin-top: 2%;
+
+    
+}
+.followBtn{
+    margin-top: 2%;
+}
+.stockHeader{
+    font-size: 2vw;
+    font-weight: bold;
+}
+.stockTrait{
+    padding: 1%;
+    margin: .5%;
+    
+    
+}
+.stockTraitH{
+    
+    padding: .2%;
+}

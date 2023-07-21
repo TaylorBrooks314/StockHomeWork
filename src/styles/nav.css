@@ -1,0 +1,25 @@
+.NavBarContainer{
+   
+    /* background-color: rgb(255, 2, 2); */
+}
+
+.NavBar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+    color: rgb(10, 10, 10);
+    font-size: 2vw;
+    background-color: rgba(252, 252, 252, 0.308);
+    margin-bottom: 5%;
+    list-style-type: none;
+}
+
+li{
+    padding: 2%;
+}
+li:hover{
+    background-color: rgba(11, 192, 74, 0.35);
+    border-radius: 15%;
+    
+}
+

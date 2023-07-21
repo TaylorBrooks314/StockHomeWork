@@ -1,0 +1,10 @@
+*{
+    text-align: center;
+    margin: 0;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
