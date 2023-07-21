@@ -26,7 +26,7 @@ function Dashboard() {
       return(
         <div className='stockData' key={stock.name}>
 
-          <Link className='stockLink' to={`/stock/${stock.symbol}`}onClick={()=>{setCurrentStock(stock)}}>{stock.name}</Link>
+          <Link className='stockLink' to={`/stock/${stock.symbol}`}onClick={()=>{setCurrentStock(stock)}}>{stock.name} ({stock.symbol})</Link>
           {followDot?<p className='followDot'>**</p>:null}
           <p className='stockP price' >{stock.lastPrice}</p>
           <p className='stockP' style={{color:color}}>{change} ({stock.change.toFixed(2)}%)</p>
