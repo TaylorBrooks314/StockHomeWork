@@ -6,13 +6,14 @@
 .DashBoard{
     padding: 1%;
     width: 95%;
-   
 }
+
 .stockData{
     
     display: flex;
     justify-content: space-between;
     padding: 1%;
+    font-size: 25px;
     
 }
 .followDot{
@@ -26,6 +27,7 @@
     padding-right: 10%;
     margin-top: 5%;
     justify-content: space-between;
+    font-size: 25px;
 }
 
 .stockLink{
@@ -37,6 +39,7 @@
     margin: .1%;
     padding-top: 1%;
     padding-right: 1%;
+    font-size: 20px;
 }
 .stockLink:visited{
 
